@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from './Image.jsx';
 import images from '../imageData.js';
+import styles from '../styleData.js';
 
 function createImage(image) {
     return <Image 
@@ -12,10 +13,13 @@ function createImage(image) {
 function Hero() {
 
     return (
-        <div>
+        <div className={styles.hero.all}>
             {images.map(createImage)}
-            <h1>Company Name</h1>
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscin</h2> 
+            <div className={styles.hero.textBox}>
+                <h1 className={styles.hero.title}>Company Name</h1>
+                <h2 className={styles.hero.slogan}>Lorem ipsum dolor sit amet, consectetur adipiscin</h2> 
+            </div>
+            
         </div>
         
     )

@@ -1,8 +1,9 @@
 import React from 'react';
+import styles from '../styleData';
 
 function Image(props) {
     return (
-        <div>
+        <div className={styles.image}>
             <img src={props.url} alt={props.altTag} />
         </div>
     )
