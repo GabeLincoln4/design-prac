@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../data/styleData';
 
 function Footer() {
 
@@ -6,12 +7,12 @@ function Footer() {
     const year = date.getFullYear();
 
     return (
-        <div>
-            <ul>
+        <div className={styles.footer.all}>
+            <ul className={styles.footer.info}>
                 <li>Copyright @{year}</li>
-                <ul>
-                    <li>facebook icon</li>
-                    <li>linkedin icon</li>
+                <ul className={styles.footer.social}>
+                    <li className={styles.footer.icon}>facebook icon</li>
+                    <li className={styles.footer.icon}>linkedin icon</li>
                 </ul>
             </ul>
         </div>
