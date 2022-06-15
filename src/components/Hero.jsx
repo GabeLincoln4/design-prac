@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from './Image.jsx';
-import images from '../imageData.js';
-import styles from '../styleData.js';
+import images from '../data/imageData.js';
+import styles from '../data/styleData.js';
 
 function createImage(image) {
     return <Image 

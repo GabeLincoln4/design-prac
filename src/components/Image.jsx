@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styleData';
+import styles from '../data/styleData';
 
 function Image(props) {
     return (
