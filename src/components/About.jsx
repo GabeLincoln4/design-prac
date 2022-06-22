@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from '../data/styleData.js';
+import InfoBox from "./InfoBox.jsx";
 
 function About() {
 
@@ -8,16 +9,20 @@ function About() {
 
     return (
         <div className={styles.about.all}>
-            
-                <div className={styles.about.bio}>
-                    <h2 className={styles.about.title}>Company Biography</h2>
-                    <p className={styles.about.content}>{companyBio}</p>
-                </div>
-                <div className={styles.about.mission}>
-                    <h2 className={styles.about.missionTitle}>Company Mission</h2>
-                    <p className={styles.about.content}>{companyMission}</p>
-                </div>
-            
+                <InfoBox 
+                    title = "Company Biography"
+                    description = {companyBio}
+                    infoBoxStyle = {styles.about.bio}
+                    titleStyle = {styles.about.title}
+                    descriptionStyle = {styles.about.content}
+                />
+                <InfoBox 
+                    title = "Company Mission"
+                    description = {companyMission}
+                    infoBoxStyle = {styles.about.mission}
+                    titleStyle = {styles.about.missionTitle}
+                    descriptionStyle = {styles.about.content}
+                />
         </div>
     )
 }
